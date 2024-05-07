@@ -1,0 +1,42 @@
+﻿@page
+@model InventoryManagementSystem.Pages.Products.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+<h3>@ViewData["Title"]</h3>
+<hr />
+<div class="row shadow">
+    <div class="col-md-4">
+       
+            <div class="form-group">
+                <label asp-for="Products.Name" class="control-label"></label>
+                <input asp-for="Products.Name" class="form-control" readonly />
+
+                
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Products.Price" class="control-label"></label>
+            <input type="number" asp-for="Products.Price" class="form-control" readonly />
+               
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Products.Description" class="control-label"></label>
+                <input asp-for="Products.Description" class="form-control" readonly />
+              
+
+            </div>
+        <div class="form-group" mt-2>
+
+
+
+
+            <a class="btn btn-primary" asp-page="Index">Product List</a>
+
+            <div />
+        
+
+    </div>
+</div>
+
